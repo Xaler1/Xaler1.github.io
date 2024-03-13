@@ -21,14 +21,19 @@ as well as expertise in data science and machine learning tools such as PyTorch,
 I’ve also demonstrated my abilities in game and web development, with projects like the Graviton Android game and Unreal Engine plugins that have garnered significant attention.
 
 I invite you to explore my site, learn more about my projects, and see how my skills and experiences can contribute to innovative and efficient technological advancements.
+
+### Contact me!
+- +1 (929) 641 3080
+- [alex.and.radchenko@gmail.com](mailto:alex.and.radchenko@gmail.com)
+- [LinkedIn](https://www.linkedin.com/in/xaler/)
 """
 
-col1, col2 = st.columns(2)
+col1, col2 = st.columns([2, 1])
 
 with col1:
     st.markdown(description)
 
 with col2:
-    st.image("./profile_pic.jpg", caption="Alexander Radchenko", width=700)
+    st.image("./profile_pic.jpg", caption="Alexander Radchenko", use_column_width=True)
 
 

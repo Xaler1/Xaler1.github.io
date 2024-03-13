@@ -63,20 +63,24 @@ def run():
         >Admitted directly into the second year of the program. 
         >Graduated in May of 2023.
         >
-        >Overall GPA: 4.0
+        >Overall GPA: 4.0 (First Class Honours)
         
         >Year 4:
-        >- Research Project on "Language Reasoning with Visual Ques"
+        >- Research Project on "Language Reasoning with Visual Cues"
+        >- Dean's List
         >- Machine Learning
         >- NLP
         >- Signal Processing
         
         >Year 3:
-        >- Group software project using Java, SQL, and JavaScript: A federated network of journals for peer-reviewing code. 
+        >- Group software project using Java, SQL, and JavaScript: A federated network of journals for peer-reviewing code 
+        >- Achieved highest average grade in the class for the year
+        >- Dean's List
         >- Databases
         >- Algorithms
         
         >Year 2:
+        >- Dean's List
         >- Object-Oriented Programming
         >- Linear Algebra
         >- Probability and Statistics

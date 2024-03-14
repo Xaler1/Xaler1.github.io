@@ -1,4 +1,5 @@
 import streamlit as st
+from streamlit_js_eval import streamlit_js_eval
 import base64
 
 st.set_page_config(page_title="📄 CV", page_icon=":page_facing_up:")
@@ -8,7 +9,8 @@ st.title("My CV")
 with open("./Alexander Radchenko CV.pdf", "rb") as f:
     pdf = f.read()
 base64_pdf = base64.b64encode(pdf).decode('utf-8')
-pdf_display = F'<iframe src="data:application/pdf;base64,{base64_pdf}" width="800" height="1000" type="application/x-google-chrome-pdf">'
-# st.markdown(pdf_display, unsafe_allow_html=True)
-alt_pdf = f'<object data="data:application/pdf;base64,{base64_pdf}" width="800" height="1000">'
-st.markdown(alt_pdf, unsafe_allow_html=True)
+pdf_display = F'<iframe src="data:application/pdf;base64,{base64_pdf}" width="800" height="1000" type="application/pdf">'
+#st.markdown(pdf_display, unsafe_allow_html=True)
+alt_pdf = f'<embed src="Alexander Radchenko CV.pdf" type="application/pdf" width="100%" height="100%" />'
+st.markdown(pdf_display, unsafe_allow_html=True)
+

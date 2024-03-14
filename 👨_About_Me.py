@@ -34,8 +34,7 @@ col1, col2 = st.columns([2, 1])
 
 with col1:
     st.markdown(description)
-    if st.button("‎ " * 32 + "View my CV" + "‎ " * 32, type="primary"):
-        st.switch_page("pages/3_📄_CV.py")
+    st.download_button("‎ " * 27 + "Download my CV" + "‎ " * 27, type="primary", file_name="Alexander_Radchenko_CV.pdf", data="Alexander_Radchenko_CV.pdf")
     if st.button("See my educational and work experiences", type="primary"):
         st.switch_page("pages/1_🎓_Education_and_Work.py")
     if st.button("‎ " * 13 + "Learn more about my projects" + "‎ " * 13, type="primary"):

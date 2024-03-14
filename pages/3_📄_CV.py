@@ -22,4 +22,4 @@ pdf_display = F'<iframe src="data:application/pdf;base64,{base64_pdf}" width="80
 alt_pdf = f'<embed src="Alexander Radchenko CV.pdf" type="application/pdf" width="100%" height="100%" />'
 st.markdown(pdf_display, unsafe_allow_html=True)
 
-streamlit_js_eval(js_expressions=js_code, key='removeSandbox')
+streamlit_js_eval(js_expressions=js_code, key='removeSandbox2')

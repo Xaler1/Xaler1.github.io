@@ -6,6 +6,14 @@ st.set_page_config(page_title="📄 CV", page_icon=":page_facing_up:")
 
 st.title("My CV")
 
+js_code = """
+const iframes = document.getElementsByTagName('iframe');
+for (let i = 0; i < iframes.length; i++) {
+    iframes[i].removeAttribute('sandbox');
+}
+"""
+streamlit_js_eval(js_expressions=js_code, key='removeSandbox')
+
 with open("./Alexander Radchenko CV.pdf", "rb") as f:
     pdf = f.read()
 base64_pdf = base64.b64encode(pdf).decode('utf-8')

@@ -26,7 +26,6 @@ I invite you to explore my site:
 
 description_2 = """
 ### Contact me!
-- +1 (929) 641 3080
 - [alex.and.radchenko@gmail.com](mailto:alex.and.radchenko@gmail.com)
 - [LinkedIn](https://www.linkedin.com/in/xaler/)
 """

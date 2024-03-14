@@ -45,7 +45,7 @@ with col1:
     st.markdown(description_2)
 
 with col2:
-    st.image("./profile_pic.jpg", caption="Me! ^", use_column_width=True)
+    st.image("./profile_pic.jpg", caption="Me!", use_column_width=True)
 
 js_code = """var anchors = document.getElementsByTagName('a');
 for (var i = 0; i < anchors.length; i++) {

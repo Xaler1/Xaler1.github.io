@@ -10,5 +10,5 @@ with open("./Alexander Radchenko CV.pdf", "rb") as f:
 base64_pdf = base64.b64encode(pdf).decode('utf-8')
 pdf_display = F'<iframe src="data:application/pdf;base64,{base64_pdf}" width="800" height="1000" type="application/x-google-chrome-pdf">'
 # st.markdown(pdf_display, unsafe_allow_html=True)
-alt_pdf = '<iframe src="file://./Alexander Radchenko.pdf" width="800" height="1000"></iframe>'
-st.components.v1.html(alt_pdf, width=800, height=1000)
+alt_pdf = f'<object data="data:application/pdf;base64,{base64_pdf}" width="800" height="1000">'
+st.markdown(alt_pdf, unsafe_allow_html=True)

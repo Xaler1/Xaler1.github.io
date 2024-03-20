@@ -30,6 +30,14 @@ description_2 = """
 - [LinkedIn](https://www.linkedin.com/in/xaler/)
 """
 
+vln_description = """## Language Navigation with Visual Cues
+This was my final year project at the University of St Andrews. Which ended up being presented at [ICRA 2023 in London](https://sites.google.com/view/cognitive-modeling-icra2023-ws/contributions?authuser=0#h.9dehx8dlga4n).
+The goal was to create an end-to-end high level task planning and execution system for a robotic system. By combining GPT-3 and an open-vocabulary object detection model I was able 
+to create a system that could understand natural language instructions, and execute them in a simulated environment based on observations from that environment.
+
+Using Python, Lua, PyTorch, GPT-3 and various Open vocabulary object detection models.
+"""
+
 col1, col2 = st.columns([2, 1])
 
 with col1:
@@ -41,15 +49,18 @@ with col1:
         st.switch_page("pages/2_💻_Projects.py")
     st.markdown("Or look at the snapshot below!")
 
+    st.markdown("### Some cool projects I've worked on:")
+    with st.container(border=True):
+        container_col1, container_col2 = st.columns([1, 3])
+        with container_col1:
+            st.markdown("")
+            st.image("./language_navigation.png")
+        with container_col2:
+            st.markdown(vln_description)
+
     st.markdown(description_2)
+
+
 
 with col2:
     st.image("./profile_pic.jpg", caption="Me!", use_column_width=True)
-
-js_code = """var anchors = document.getElementsByTagName('a');
-for (var i = 0; i < anchors.length; i++) {
-    anchors[i].setAttribute('target', '_self');
-}"""
-
-
-streamlit_js_eval(js_expressions=js_code, key='setTargetSelf')

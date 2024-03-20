@@ -42,11 +42,22 @@ col1, col2 = st.columns([2, 1])
 
 with col1:
     st.markdown(description)
-    st.download_button("‎ " * 27 + "Download my CV" + "‎ " * 27, type="primary", file_name="Alexander_Radchenko_CV.pdf", data="Alexander_Radchenko_CV.pdf")
-    if st.button("See my educational and work experiences", type="primary"):
-        st.switch_page("pages/1_🎓_Education_and_Work.py")
-    if st.button("‎ " * 13 + "Learn more about my projects" + "‎ " * 13, type="primary"):
-        st.switch_page("pages/2_💻_Projects.py")
+    # st.download_button("‎ " * 27 + "Download my CV" + "‎ " * 27, type="primary", file_name="Alexander_Radchenko_CV.pdf", data="Alexander_Radchenko_CV.pdf")
+    # if st.button("See my educational and work experiences", type="primary"):
+    #     st.switch_page("pages/1_🎓_Education_and_Work.py")
+    # if st.button("‎ " * 13 + "Learn more about my projects" + "‎ " * 13, type="primary"):
+    #     st.switch_page("pages/2_💻_Projects.py")
+
+    subcol1, subcol2, subcol3 = st.columns([1, 1, 1])
+    with subcol1:
+        st.download_button("Download my CV", type="primary", file_name="Alexander_Radchenko_CV.pdf", data="Alexander_Radchenko_CV.pdf", use_container_width=True)
+    with subcol2:
+        if st.button("See my educational and work experiences", type="primary", use_container_width=True):
+            st.switch_page("pages/1_🎓_Education_and_Work.py", use_container_width=True)
+    with subcol3:
+        if st.button("Learn more about my projects", type="primary", use_container_width=True):
+            st.switch_page("pages/2_💻_Projects.py")
+
     st.markdown("Or look at the snapshot below!")
 
     st.markdown("### Some cool projects I've worked on:")

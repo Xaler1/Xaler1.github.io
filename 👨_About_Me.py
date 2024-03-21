@@ -15,10 +15,10 @@ My journey in robotics and machine learning is driven by this philosophy, as I s
 
 As a current Masters student in Robotics at the University of Pennsylvania, 
 I specialize in Computer Vision and Reinforcement Learning, applying these cutting-edge technologies to the field of robotics. 
-My academic excellence is reflected in my 3.9 GPA, and my hands-on experience includes a dissertation that achieved state-of-the-art results in language reasoning with visual cues.
+My past experience includes a dissertation that achieved state-of-the-art results in language reasoning with visual cues and several other deep learning projects.
 
-My technical skills are diverse, encompassing programming languages like Python, Java, C, and C++, 
-as well as expertise in data science and machine learning tools such as PyTorch, Pandas, and HuggingFace. 
+My main programming languages are Python, Java, and C++, 
+I also have expertise in data science and machine learning tools such as PyTorch, Pandas, and HuggingFace. 
 I’ve also demonstrated my abilities in game and web development, with projects like the Graviton Android game and Unreal Engine plugins that have garnered significant attention.
 
 I invite you to explore my site:
